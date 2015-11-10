@@ -1014,7 +1014,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
     return !self.centerController || [self.centerController shouldAutorotate];
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     if (self.centerController)
         return [self.centerController supportedInterfaceOrientations];
     
